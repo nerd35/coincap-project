@@ -1,0 +1,24 @@
+.header-section{
+  background-image: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) !important;
+  height: 150px;
+}
+
+.table-section{
+  position: relative;
+  top: -100px !important;
+}
+
+.load-more{
+  margin-top: 20px;
+  text-align: center;
+}
+.load-more-btn {
+  background-color: purple !important;
+  border-radius: 30px;
+}
+.tb-option{
+  font-size: 13px; font-weight: 400; padding: 1rem;
+}
+.th-option{
+  font-size: 13px; font-weight: 400; padding: 1rem;
+}
