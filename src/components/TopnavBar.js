@@ -34,7 +34,7 @@ class TopnavBar extends Component {
 									</li>
 									<li>
 										<a
-											href='/'
+											href='/chart'
 											className='black-text'
 											style={{ fontSize: '14px', color: '#474F5A' }}
 										>

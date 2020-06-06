@@ -22,3 +22,17 @@
 .th-option{
   font-size: 13px; font-weight: 400; padding: 1rem;
 }
+
+.chart-section{
+  margin-top: 40px !important;
+}
+.react-chart{
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+}
+.loader{
+  justify-content: center !important;
+  text-align: center;
+  margin-top: 20px;
+}

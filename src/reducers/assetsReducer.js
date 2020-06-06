@@ -1,4 +1,4 @@
-import { FETCH_ASSETS } from '../actions/types';
+import { FETCH_ASSETS,  } from '../actions/types';
 
 const initialState = {
   assets: [],
