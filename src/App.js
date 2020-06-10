@@ -1,30 +1,36 @@
-import React from 'react';
-import 'materialize-css';
-import 'materialize-css/dist/css/materialize.min.css';
-import 'materialize-css/dist/js/materialize.min.js';
+import React from "react";
+import "materialize-css";
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min.js";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 
-import { TopnavBar, TableSection, HistoryChart } from './components';
+import {
+  TopnavBar,
+  TableSection,
+  HistoryChart,
+  SingleTableSection,
+} from "./components";
 
-import store from './store';
+import store from "./store";
 
 class App extends React.Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<div>
-					<TopnavBar />
-					<Router>
-					<Route  exact path='/' component={TableSection}/>
-					<Route  exact path='/chart' component={HistoryChart}/>
-					</Router>
-				</div>
-			</Provider>
-		);
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <div>
+          <TopnavBar />
+          <Router>
+            <Route exact path="/" component={TableSection} />
+            <Route exact path="/chart" component={HistoryChart} />
+            <Route exact path="/:id" component={SingleTableSection} />
+          </Router>
+        </div>
+      </Provider>
+    );
+  }
 }
 
 export default App;
