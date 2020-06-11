@@ -10,11 +10,10 @@ import { Provider } from "react-redux";
 import {
   TopnavBar,
   TableSection,
-  HistoryChart,
   SingleTableSection,
 } from "./components";
 
-import store from "./store";
+import store from "./redux/store";
 
 class App extends React.Component {
   render() {
@@ -24,7 +23,6 @@ class App extends React.Component {
           <TopnavBar />
           <Router>
             <Route exact path="/" component={TableSection} />
-            <Route exact path="/chart" component={HistoryChart} />
             <Route exact path="/:id" component={SingleTableSection} />
           </Router>
         </div>

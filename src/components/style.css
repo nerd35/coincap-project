@@ -1,6 +1,20 @@
-.header-section{
-  background-image: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) !important;
-  height: 150px;
+.logo{
+  color:rgba(255, 56, 96, 1);
+  font-size: 27px !important;
+  font-weight: 800;
+}
+.nav-link{
+  color: rgba(255, 56, 96, 1) !important;
+}
+.navbar-toggler, .navbar-toggler-icon{
+  color-adjust: rgba(255, 56, 96, 1) !important;
+}
+
+.hero-section{
+  height: 30vh;
+  background-color: rgba(255, 56, 96, 1);
+  top: -300px !important;
+  z-index: -2 ;
 }
 
 .table-section{

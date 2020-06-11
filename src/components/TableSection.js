@@ -4,12 +4,9 @@ import NumberFormat from "react-number-format";
 import { connect } from "react-redux";
 import Loader from "react-loader-spinner";
 import { withRouter } from "react-router";
-import { ModalHeader, Button, Modal, ModalBody, ModalFooter } from "reactstrap";
-import { fetchAssets } from "../actions//assetActions";
-import { fetchMarketHistory } from "../actions/marketAction";
+import { fetchAssets } from "../redux/assets/assetActions";
+import { fetchMarketHistory } from "../redux/market/marketAction";
 import MarketCapNav from "./MarketcapNav";
-import { LineChart } from "react-chartkick";
-import "chart.js";
 
 class TableSection extends Component {
   constructor() {
@@ -31,7 +28,7 @@ class TableSection extends Component {
     historyData();
   }
   toggle = async ({ id }) => {
-    await this.props.fetchMarketHistory(id);
+    await this.props.fetchMarketHistory();
     this.props.history.push(id);
   };
 

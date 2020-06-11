@@ -1,4 +1,4 @@
-import { FETCH_ASSETS, IS_LOADING,  } from './types';
+import { FETCH_ASSETS, IS_LOADING,  } from './assets.type';
 import axios from 'axios';
 const url = 'https://api.coincap.io/v2';
 

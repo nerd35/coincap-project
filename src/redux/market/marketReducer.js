@@ -1,4 +1,4 @@
-import { FETCH_MARKET } from '../actions/types';
+import { FETCH_MARKET } from './market.types';
 
 const initialState = {
 	marketHistory: [{

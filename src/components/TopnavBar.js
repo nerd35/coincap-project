@@ -2,140 +2,59 @@ import React, { Component } from 'react';
 class TopnavBar extends Component {
 	render() {
 		return (
-			<div>
-				<div>
-					<nav className=' white lighten-5 '>
-						<div className='container'>
-							<div className='nav-wrapper mt'>
-								<a href='/' className='brand-logo center '>
-									<img src={require('../assets/logo.png')} alt='logo' style={{ maxWidth: '23%' }} />
-								</a>
-								<a href='/' data-target='slide-out' className='sidenav-trigger right '>
-									<i className='material-icons black-text'>menu</i>
-								</a>
-								<ul className='left hide-on-med-and-down'>
-									<li>
-										<a
-											href='/'
-											className='black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-										>
-											Coins
-										</a>
-									</li>
-									<li>
-										<a
-											href='/'
-											className='black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-										>
-											Exchanges
-										</a>
-									</li>
-									<li>
-										<a
-											href='/chart'
-											className='black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-										>
-											Charts
-										</a>
-									</li>
-									<li>
-										<a
-											href='/'
-											className='black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-										>
-											API
-										</a>
-									</li>
-								</ul>
-								<ul className='right hide-on-med-and-down'>
-									<li>
-										<a
-											href='#!'
-											class='dropdown-trigger black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-											data-target='dropdown1'
-										>
-											USD<i class='material-icons right'>arrow_drop_down</i>
-										</a>
-									</li>
-
-									<li>
-										<a
-											href='#!'
-											class='dropdown-trigger black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-											data-target='dropdown2'
-										>
-											English<i class='material-icons right'>arrow_drop_down</i>
-										</a>
-									</li>
-									<li>
-										<a
-											href='/'
-											className='black-text'
-											style={{ fontSize: '12px', color: '#474F5A' }}
-										>
-											<i class='fas fa-search' style={{ fontSize: '14px', color: '#474F5A' }}></i>
-										</a>
-									</li>
-									<li>
-										<a
-											href='/'
-											className='black-text'
-											style={{ fontSize: '14px', color: '#474F5A' }}
-										>
-											<i class='fas fa-cogs' style={{ fontSize: '16px', color: '#474F5A' }}></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<ul id='slide-out' className='sidenav'>
-						<li>
-							<a href='/' className='black-text' style={{ fontSize: '20px', color: '#474F5A' }}>
-								<i class='fab fa-bitcoin fa-lg'></i> Coins
-							</a>
-						</li>
-						<li>
-							<a href='/' className='black-text' style={{ fontSize: '20px', color: '#474F5A' }}>
-								<i class='fas fa-exchange-alt fa-lg'></i> Exchanges
-							</a>
-						</li>
-						<li>
-							<a href='/' className='black-text' style={{ fontSize: '20px', color: '#474F5A' }}>
-								<i class='fas fa-cogs fa-lg'></i> Setings
-							</a>
-						</li>
-					</ul>
-					<ul id='dropdown1' class='dropdown-content'>
-						<li>
-							<a href='/'>AFN</a>
-						</li>
-						<li>
-							<a href='/'>BBD</a>
-						</li>
-						<li>
-							<a href='/'>AOA</a>
-						</li>
-					</ul>
-					<ul id='dropdown2' class='dropdown-content'>
-						<li>
-							<a href='/'>France</a>
-						</li>
-						<li>
-							<a href='/'>Spainish</a>
-						</li>
-						<li>
-							<a href='/'>Italian</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<nav className="navbar shadow fixed-top navbar-expand-lg navbar-light bg-white">
+			<div className='container'>
+		<a className="navbar-brand " href="/"><img src={require('../assets/logo.ico')} alt='logo'/>
+		<strong className="logo">Cryptomining</strong></a>
+		<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span className="navbar-toggler-icon"></span>
+		</button>
+		<div className="collapse navbar-collapse" id="navbarText">
+			<ul className="navbar-nav mx-auto">
+				<li className="nav-item">
+					<a className="nav-link" href="/">Coin </a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/exchanges">Exchange</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/history">Charts</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/">Api</a>
+				</li>
+			</ul>
+			<span className="navbar-text">
+				<ul className="navbar-nav ml-auto">
+				
+				<li className="nav-item dropdown">
+					<a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						USD
+					</a>
+					<div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a className="dropdown-item" href="/">USD</a>
+						<a className="dropdown-item" href="/">USD</a>
+						<a className="dropdown-item" href="/">USD</a>
+					</div>
+				</li>
+				<li className="nav-item dropdown">
+					<a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						English
+					</a>
+					<div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a className="dropdown-item" href="/">French</a>
+						<a className="dropdown-item" href="/">Yoruba</a>
+						<a className="dropdown-item" href="/">Hausa</a>
+					</div>
+				</li>
+				<li className="nav-item">
+					<a class="nav-link" href="/">Charts</a>
+				</li>
+				</ul>
+			</span>
+		</div>
+		</div>
+	</nav>
 		);
 	}
 }

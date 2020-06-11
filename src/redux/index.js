@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import assetsReducer from './assetsReducer';
-import marketReducer from './marketReducer';
+import assetsReducer from '../redux/assets/assetsReducer';
+import marketReducer from '../redux/market/marketReducer';
 
 export default combineReducers({
   assets: assetsReducer,

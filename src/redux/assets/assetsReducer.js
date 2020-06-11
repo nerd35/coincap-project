@@ -1,4 +1,4 @@
-import { FETCH_ASSETS,  } from '../actions/types';
+import { FETCH_ASSETS,  } from './assets.type';
 
 const initialState = {
   assets: [],
@@ -6,7 +6,7 @@ const initialState = {
 }
 
 
-export default function(state = initialState, action){
+const assetsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ASSETS:
       return {
@@ -19,3 +19,5 @@ export default function(state = initialState, action){
      return state ;
   }
 }
+
+export default assetsReducer;
