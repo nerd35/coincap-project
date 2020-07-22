@@ -15,7 +15,7 @@ class TopnavBar extends Component {
 					<a className="nav-link" href="/">Coin </a>
 				</li>
 				<li className="nav-item">
-					<a className="nav-link" href="/exchanges">Exchange</a>
+					<a className="nav-link" href="/exchange">Exchange</a>
 				</li>
 				<li className="nav-item">
 					<a className="nav-link" href="/history">Charts</a>

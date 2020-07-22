@@ -11,6 +11,7 @@ import {
   TopnavBar,
   TableSection,
   SingleTableSection,
+  Exchange
 } from "./components";
 
 import store from "./redux/store";
@@ -24,6 +25,7 @@ class App extends React.Component {
           <Router>
             <Route exact path="/" component={TableSection} />
             <Route exact path="/:id" component={SingleTableSection} />
+            <Route exact path="/exchange" component={Exchange} />
           </Router>
         </div>
       </Provider>
